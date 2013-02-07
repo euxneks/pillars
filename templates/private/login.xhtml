@@ -1,0 +1,23 @@
+<div class="header">
+    <h1><a href="{BASE_URL}">{title}</a></h1>
+</div>
+	<div style="width: 30%; margin-left:auto; margin-right:auto;">
+        <div class="ui-widget">
+            <div class="ui-state-highlight ui-corner-all" style="margin: 10px; padding: 0 .7em;">
+                <p><span class="ui-icon ui-icon-info" style="float: left; margin-right: .3em;"></span>
+                <strong>{message}</strong></p>
+            </div>
+        </div>
+        <div class="ui-widget ui-corner-all" style="border: 1px solid #d3d3d3; margin:10px; padding: 0.7em;">
+		<form action="" method="post">
+					<div><label for="username">Username</label> <input name="username" type="text" /></div>
+					<div><label for="username">Password</label> <input name="password" type="password" /></div>
+					<div style="text-align:center;"><input id="login" type="submit" value="Log In" /></div>	
+			</fieldset>
+		</form>
+		</div>
+		<script type="text/javascript">
+			$('form input').attr( 'class', 'ui-widget ui-corner-all' );
+			$('#login').button();
+		</script>
+	</div>

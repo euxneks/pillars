@@ -1,0 +1,26 @@
+<h1>{action} page</h1>
+<div id="edit">
+	<form method="post" action="{BASE_URL}admin/{action}/{id}">
+		<div>
+			<h2 style="display:block;">Title:</h2>
+			<input type="text" name="title" class="biginput" value="{title}" />
+		</div>
+		<div>
+			<h2 style="display:block;">Content:</h2>
+			<textarea id="edit_content" name="content">{content}</textarea>
+		</div>
+		<div>
+			<input type="submit" id="save" name="save" class="bigbutton" value="Save" onclick=""/>
+		</div>
+		<div id="metadata" style="background-color: #ddd;padding:3pt;">
+			<ul><li>Last edited: {uid} on {modified}</li><li>Created on: {created}</li><li>Revision: {version}</li></ul>
+		</div>
+		<script type="text/javascript">
+			$('document').ready(function(){
+					if ( '{uid}' == '' ) {
+						$( '#metadata' ).hide();
+					}
+					});
+		</script>
+	</form>
+</div>

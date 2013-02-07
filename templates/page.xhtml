@@ -1,0 +1,26 @@
+{pillars:links,page}
+<div class="main">
+	<div class="header">
+		<h1><a href="{BASE_URL}">{title}</a></h1>
+	</div>
+	<div>
+		<div class="left">
+			<div>
+				<ul>
+					{foreach:links}<li><a href="{links:src}" title="{links:alt}">{links:title}</a></li>{/foreach:links}
+				</ul>
+			</div>
+		</div>
+		<div class="right">
+			<div>
+				<div class="pages">
+					<a href="{BASE_URL}page/{page:id}"><h2>{page:title}</h2></a>
+					<time>{page:created}</time>
+					{page:content}
+				</div>
+				<div class="nav navleft">{page:prev_nav}</div>
+				<div class="nav navright">{page:next_nav}</div>
+			</div>
+		</div>
+	</div>
+</div>
