@@ -1,2 +1,3 @@
 .htaccess
 includes/configuration.php
+*.swp
